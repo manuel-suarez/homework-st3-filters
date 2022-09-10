@@ -10,12 +10,10 @@ int main()
     std::string image_path = samples::findFile("starry_night.jpg");
     Mat img = imread(image_path, IMREAD_COLOR);
 
-    if (img.empty())
-    {
+    if (img.empty()) {
         std::cout << "Could not read the image: " << image_path << std::endl;
         return 1;
     }
-    int k = waitKey(0);
 
     if (k == 's')
     {
