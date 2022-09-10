@@ -15,10 +15,7 @@ int main()
         return 1;
     }
 
-    if (k == 's')
-    {
-        imwrite("starry_night.png", img);
-    }
+    imwrite("starry_night.png", img);
 
     return 0;
 }
